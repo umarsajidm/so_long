@@ -6,7 +6,7 @@
 /*   By: musajid <musajid@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 14:55:11 by INTRA_LOGIN       #+#    #+#             */
-/*   Updated: 2025/07/26 17:08:00 by musajid          ###   ########.fr       */
+/*   Updated: 2025/10/05 17:21:57 by musajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,10 @@ typedef struct s_data
 	int	ret;
 	int	count;
 }	t_data;
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
 
 void	*ft_bzero(void	*str, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
@@ -64,5 +68,6 @@ int		ft_printf(const char	*format, ...);
 int		ft_unsigned(unsigned int num);
 int		ft_print_hex(unsigned long n, int is_uppercase);
 int		ft_pointer(void *pointer);
+char	*get_next_line(int fd);
 
 #endif

@@ -1,8 +1,17 @@
 NAME = so_long
-CC = cc
-CFLAGS = -Wall -Wextra -Werror
 
-SRC = main.c maps.c validate.c render.c controls.c
+CC = cc
+
+CFLAGS = -Wall -Wextra -Werror -I. -I$(MLXDIR)
+
+SRC = src/main.c \
+	src/game.c \
+	src/validation.c \
+	src/render.c \
+	src/control.c \
+	src/utils.c	\
+	src/map_parsing.c \
+	src/checks.c
 
 OBJ = $(SRC:.c=.o)
 

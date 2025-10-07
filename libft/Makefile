@@ -6,7 +6,7 @@
 #    By: musajid <musajid@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/24 21:32:51 by musajid           #+#    #+#              #
-#    Updated: 2025/07/24 21:32:52 by musajid          ###   ########.fr        #
+#    Updated: 2025/10/05 17:22:28 by musajid          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,7 +48,8 @@ SRCS = ft_atoi.c \
 	ft_tolower.c \
 	ft_toupper.c \
 	ft_printf.c \
-	utilities.c
+	utilities.c	\
+	get_next_line.c
 OBJS = $(SRCS:.c=.o)
 
 
